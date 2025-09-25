@@ -1,0 +1,8 @@
+def convert_temperature(celsius):
+  fahrenheit = celsius * 9/5 + 32
+  kelvin = celsius + 273.15
+  return fahrenheit, kelvin
+celsius_temperature = 25
+fahrenheit_temperature, kelvin_temperature = convert_temperature(celsius_temperature)
+print(f"{celsius_temperature} градусов Цельсия равно {fahrenheit_temperature} градусам Фаренгейта.")
+print(f"{celsius_temperature} градусов Цельсия равно {kelvin_temperature} Кельвинам.")
